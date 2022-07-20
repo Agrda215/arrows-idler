@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Arrows Idle</title>
+    <style>
+      h2 {
+        text-align: center;
+        font-size: 25px;
+      }
+
+      h3 {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        background-color: var(--school-color);
+      }
+
+      canvas#left {
+        position: absolute;
+        left: var(--left-x);
+        top: var(--left-y);
+      }
+
+      canvas#right {
+        position: absolute;
+        left: var(--right-x);
+        top: var(--right-y);
+      }
+
+      canvas#up {
+        position: absolute;
+        left: var(--up-x);
+        top: var(--up-y);
+      }
+
+      canvas#down {
+        position: absolute;
+        left: var(--down-x);
+        top: var(--down-y);
+      }
+
+      iframe {
+        position: absolute;
+      }
+
+      h2.add {
+        position: absolute;
+        left: 20px;
+      }
+
+      :root {
+        --school-color: yellowgreen;
+        --left-x: 20px;
+        --left-y: 120px;
+        --right-x: 250px;
+        --right-y: 120px;
+        --up-x: 20px;
+        --up-y: 350px;
+        --down-x: 250px;
+        --down-y: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="score" style="text-align: center;">0</h1>
+    <h2 style="color: turquoise; table-align: center;">I think so know :)</h2>
+    <canvas
+      id="left"
+      width="200"
+      height="200"
+      style="
+        display: block;
+        background-color: yellow;
+        border-color: transparent;
+      "
+    ></canvas>
+    <canvas
+      id="right"
+      width="200"
+      height="200"
+      style="display: block; background-color: blue; border-color: transparent;"
+    ></canvas>
+    <canvas
+      id="up"
+      width="200"
+      height="200"
+      style="
+        display: block;
+        background-color: blueviolet;
+        border-color: transparent;
+      "
+    ></canvas>
+    <canvas
+      id="down"
+      width="200"
+      height="200"
+      style="
+        display: block;
+        background-color: darkcyan;
+        border-color: transparent;
+      "
+    ></canvas>
+    <iframe
+      id="partial"
+      height="120"
+      width="120"
+      src="https://jwklong.github.io/The-Partial-Tree/"
+      title="Partial"
+      frameborder="0"
+    ></iframe>
+    <h2 id="outed" class="add">Me Out?</h2>
+  </body>
+</html>
+<script src="js/main.js"></script>
